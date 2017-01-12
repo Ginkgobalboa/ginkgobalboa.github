@@ -1,0 +1,64 @@
+//global scope//
+var nameFirst = "Maddy";
+nameFirst = "Selina";
+
+let result = {msg: 200};
+result = {msg: 400};
+
+function someAction() {
+    //local scope:someAction //
+    var nameLast = "Catsby"; //local to someAction
+
+function nestedAction() {
+// local scope:nestedAction //
+    console.log(nameLast);
+    }
+    nestedAction();
+}
+someAction();
+
+// let
+
+if(nameLast) {
+    var age = 20;
+    let hasNameLast = true;
+    }
+
+function loop(array, direction - 'forward') {
+    console.log(nameLast);
+    if (direction === 'backwards') { //loop backwards
+        for(let i = array.length - 1; i > -1; i-- ){
+        console.log(array[i]);
+        }
+    else if (direction === 'forward') {
+    for (let i=0; i < array.length; i++){
+        console.log(array[i]); //i is isolated to block of code
+    }
+}
+
+loop([1,2,3]);  //if don't put var or const or let, will become global scope --> always use
+
+const user = {}; //immutability
+user.name = ""
+user.name - "randersen".toUpperCase();
+
+//Statements v. Expressions//
+
+Statements perform an action - change of state
+
+//Expressions//
+produce a value 
+
+[1,2,3] //literal syntax - a value was produced
+1 //constant expression
+1 + 1 // more traditional expression
+
+
+
+
+
+
+
+
+
+
